@@ -1,16 +1,39 @@
-The project is based on this document: https://jrdngr.github.io/pngme_book/
+**This tool allows you to hide, extract, and manage secret messages inside PNG image chunks. It works by manipulating custom ancillary chunks without affecting the visible image.**
 
 
-How to use it?
+***The project is based on this [document](https://jrdngr.github.io/pngme_book/)***
 
-To encode a message into a particular chunk run the following command:
+
+## How to Use It
+
+### 📥 Encode a Message
+
+To encode a message into a specific PNG chunk, run:
+
+```bash
 cargo run -- encode ./picture.png ruSt "A secret message"
+```
 
-To decode the message stored in a given chunk run this:
+### 📤 Decode a Message
+
+To decode the message stored in a given chunk, run:
+
+```bash
 cargo run -- decode ./picture.png ruSt
+```
 
-Remove a chunk:
+### 🗑️ Remove a Chunk
+
+To remove a chunk from the PNG file:
+
+```bash
 cargo run -- remove ./picture.png ruSt
+```
 
-Print all of the chunks in a png file:
+### 📄 Print All Chunks
+
+To print all chunks in a PNG file:
+
+```bash
 cargo run -- print ./picture.png
+```
