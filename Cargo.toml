@@ -5,3 +5,5 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0.98"
+clap = "4.5.38"
+crc = "3.3.0"
